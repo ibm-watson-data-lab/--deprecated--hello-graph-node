@@ -60,6 +60,7 @@ $ node hello-graph https://ibmgraph...net/f...6/g e...7 d...4
 ```
 
 > Set environment variable `DEBUG` to `hello-graph-node` to display IBM Graph responses
+
 > Set environment variable `DEBUG` to `ibm-graph-client` to display IBM Graph requests and responses
 
 The sample application operates on a temporary graph. To retain the graph when the application terminates add the `keep` parameter:
