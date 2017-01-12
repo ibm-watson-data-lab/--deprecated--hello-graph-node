@@ -1,0 +1,27 @@
+{
+  "name": "hello-graph-node",
+  "version": "0.1.0",
+  "description": "Sample application illustrating how to use package ibm-graph-client",
+  "main": "hello-graph.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ibm-cds-labs/hello-graph-node.git"
+  },
+  "keywords": [
+    "IBM",
+    "Graph"
+  ],
+  "author": "ptitzler@us.ibm.com",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ibm-cds-labs/hello-graph-node/issues"
+  },
+  "dependencies": {
+    "async": "^2.1.4",
+    "fs": "0.0.1-security",
+    "ibm-graph-client": "^0.3.7"
+  }
+}
