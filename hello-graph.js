@@ -94,6 +94,7 @@ graphclient.session(function(err, data) {
 								graphid = response.graphId;
 
 								// switch to new graph
+								console.log('Switching to new graph ...');
 								graphclient.graphs().set(graphid, function(err) {
 									if(err) {
 										return callback('Error switching to graph ' + graphid + ' : '  + err);		
