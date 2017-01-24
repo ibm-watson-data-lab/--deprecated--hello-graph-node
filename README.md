@@ -1,6 +1,6 @@
 # hello-graph-node
 
-This sample application illustrates how to use the [experimental Node.js library for IBM Graph](https://github.com/ibm-cds-labs/nodejs-graph) to create a graph, add vertices and edges (ad-hoc and in bulk) and traverse the graph using Gremlin.
+This sample application illustrates how to use the [experimental Node.js library for IBM Graph](https://github.com/ibm-cds-labs/nodejs-graph) to create a graph, add vertices and edges (ad-hoc and in bulk) and traverse the graph using Gremlin. If you prefer to develop in Java, check out the companion repository [hello-graph-java](https://github.com/ibm-cds-labs/hello-graph-java).
 
 If you are not familiar with IBM Graph concepts take a look at the [Getting started guide](https://ibm-graph-docs.ng.bluemix.net/gettingstarted.html).
 
@@ -60,6 +60,7 @@ $ node hello-graph https://ibmgraph...net/f...6/g e...7 d...4
 ```
 
 > Set environment variable `DEBUG` to `hello-graph-node` to display IBM Graph responses
+
 > Set environment variable `DEBUG` to `ibm-graph-client` to display IBM Graph requests and responses
 
 The sample application operates on a temporary graph. To retain the graph when the application terminates add the `keep` parameter:
