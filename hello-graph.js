@@ -19,6 +19,7 @@
 const async = require('async');
 const GDS = require('ibm-graph-client');
 const debug = require('debug')('hello-graph-node');
+const url = require('url');
 
 const util = require('./lib/util.js');
 
@@ -65,7 +66,7 @@ var graphclient = new GDS(credentials);
  */
 graphclient.session(function(err, data) {
 	if(err) {
-		console.err('Error obtaining session token: '  + err);
+		console.error('Error obtaining session token: '  + err);
 		process.exit(1);
 	}
 	// save session token
@@ -312,8 +313,12 @@ graphclient.session(function(err, data) {
 							});
 						}
 						else {
-							// retain sample graph
-							console.log('To continue your sample data exploration connect to graph ' + graphid);
+							// retain sample graph and display web console link
+							var pathelements = url.parse(credentials.apiURL).pathname.split('/');
+							if(pathelements.length > 1) {
+								var gwc_url = 'https://console.ng.bluemix.net/data/graphdb/' + pathelements[1] + '/query?graph=' + graphid;
+								console.log('Open ' + gwc_url + ' to explore the graph in the IBM Graph web console. If prompted enter your IBM Bluemix credentials.');
+							}
 						}
 					});
 }); 
