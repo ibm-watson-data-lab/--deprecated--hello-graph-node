@@ -1,6 +1,6 @@
 {
   "name": "hello-graph-node",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Sample application illustrating how to use package ibm-graph-client",
   "main": "hello-graph.js",
   "scripts": {
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "async": "^2.1.4",
+    "debug": "^2.6.0",
     "fs": "0.0.1-security",
     "ibm-graph-client": "^0.4.0",
     "url": "^0.11.0"
