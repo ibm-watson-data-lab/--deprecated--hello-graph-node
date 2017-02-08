@@ -35,6 +35,7 @@ $ cf service-key ibm-graph-sample Credentials-1
 Getting key Credentials-1 for service instance ibm-graph-sample as ...
 
 {
+ "apiURI": "https://ibmgraph-alpha.ng.bluemix.net/f...6",
  "apiURL": "https://ibmgraph-alpha.ng.bluemix.net/f...6/g",
  "username": "e...7",
  "password": "d...4"
